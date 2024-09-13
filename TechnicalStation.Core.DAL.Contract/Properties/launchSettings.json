@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "TechnicalStation.Core.DAL.Contract": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:54471;http://localhost:54472"
+    }
+  }
+}

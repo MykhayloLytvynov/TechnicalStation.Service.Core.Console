@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Configuration\appSettings.config" />
+    <Content Remove="Configuration\connectionStrings.config" />
+    <Content Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Configuration\appSettings.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Configuration\connectionStrings.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.14" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechnicalStation.Core.BLL.Contract\TechnicalStation.Core.BLL.Contract.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Core.BLL\TechnicalStation.Core.BLL.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Core.DAL.Contract\TechnicalStation.Core.DAL.Contract.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Core.Domain\TechnicalStation.Core.Domain.csproj" />
+    <ProjectReference Include="..\TechnicalStation.DAL.MySql\TechnicalStation.DAL.MySql.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Service.Core\TechnicalStation.Service.Core.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Service.Domain.Transform\TechnicalStation.Service.Domain.Transform.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Service.Domain\TechnicalStation.Service.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

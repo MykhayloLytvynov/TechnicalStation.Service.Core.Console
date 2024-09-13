@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\temp\Common.Domain\Common.Domain.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Core.BLL.Contract\TechnicalStation.Core.BLL.Contract.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Core.DAL.Contract\TechnicalStation.Core.DAL.Contract.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Core.Domain\TechnicalStation.Core.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EventHandlers\User\" />
+  </ItemGroup>
+
+</Project>

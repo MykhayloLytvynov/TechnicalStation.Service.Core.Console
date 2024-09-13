@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configuration\**" />
+    <EmbeddedResource Remove="Configuration\**" />
+    <None Remove="Configuration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="coverlet.collector" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechnicalStation.Core.BLL.Contract\TechnicalStation.Core.BLL.Contract.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Core.BLL\TechnicalStation.Core.BLL.csproj" />
+    <ProjectReference Include="..\TechnicalStation.Core.DAL.Contract\TechnicalStation.Core.DAL.Contract.csproj" />
+    <ProjectReference Include="..\TechnicalStation.DAL.MySql\TechnicalStation.DAL.MySql.csproj" />
+  </ItemGroup>
+
+</Project>

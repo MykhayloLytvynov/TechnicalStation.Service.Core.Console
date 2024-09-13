@@ -1,1 +1,1 @@
-Service part of TechnicalStation app
+Service part of the TechnicalStation app
